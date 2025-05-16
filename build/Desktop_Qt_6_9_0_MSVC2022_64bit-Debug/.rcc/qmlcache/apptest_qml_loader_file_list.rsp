@@ -1,0 +1,11 @@
+--resource
+D:/codes/test/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/.qt/rcc/qmake_test.qrc
+--resource
+D:/codes/test/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/.qt/rcc/apptest_raw_qml_0.qrc
+/qt/qml/test/LoginScreen.qml
+/qt/qml/test/PasswordList.qml
+/qt/qml/test/PasswordForm.qml
+/qt/qml/test/PasswordGenerator.qml
+/qt/qml/test/SyncScreen.qml
+/qt/qml/test/Settings.qml
+/qt/qml/test/Main.qml

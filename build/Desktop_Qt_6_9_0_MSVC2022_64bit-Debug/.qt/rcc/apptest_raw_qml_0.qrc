@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="/qt/qml/test/">
+    <file alias="LoginScreen.qml">D:/codes/test/LoginScreen.qml</file>
+    <file alias="PasswordList.qml">D:/codes/test/PasswordList.qml</file>
+    <file alias="PasswordForm.qml">D:/codes/test/PasswordForm.qml</file>
+    <file alias="PasswordGenerator.qml">D:/codes/test/PasswordGenerator.qml</file>
+    <file alias="SyncScreen.qml">D:/codes/test/SyncScreen.qml</file>
+    <file alias="Settings.qml">D:/codes/test/Settings.qml</file>
+    <file alias="Main.qml">D:/codes/test/Main.qml</file>
+  </qresource>
+</RCC>
+
