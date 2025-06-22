@@ -4,30 +4,44 @@ project(test VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt6 REQUIRED COMPONENTS Quick Core WebSockets)
+find_package(Qt6 REQUIRED COMPONENTS Quick Core WebSockets QuickControls2)
 set(QML_IMPORT_PATH ${CMAKE_CURRENT_SOURCE_DIR})
 
 qt_standard_project_setup(REQUIRES 6.8)
 
 qt_add_executable(apptest
     main.cpp
+    # authclient.h
+    authclient.cpp
 )
-
-qt_add_qml_module(apptest
-    URI test
-    VERSION 1.0
-    QML_FILES
+qt_add_resources(apptest "qml_resources"
+    PREFIX "/"
+    FILES
+        Main.qml
         LoginScreen.qml
         PasswordList.qml
         PasswordForm.qml
         PasswordGenerator.qml
         SyncScreen.qml
         Settings.qml
-        Main.qml
-    SOURCES
-        authclient.h
-        authclient.cpp
 )
+
+
+# qt_add_qml_module(apptest
+#     URI test
+#     VERSION 1.0
+#     QML_FILES
+#         LoginScreen.qml
+#         PasswordList.qml
+#         PasswordForm.qml
+#         PasswordGenerator.qml
+#         SyncScreen.qml
+#         Settings.qml
+#         Main.qml
+#     SOURCES
+#         authclient.h
+#         authclient.cpp
+# )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
@@ -44,6 +58,7 @@ target_link_libraries(apptest
     PRIVATE
     Qt6::Quick
     Qt6::WebSockets
+    Qt6::QuickControls2
 )
 
 include(GNUInstallDirs)

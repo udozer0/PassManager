@@ -3,9 +3,11 @@
 #include <QQmlContext>
 #include <QtQml>
 #include "authclient.h"
+#include <QQuickStyle>
 
 int main(int argc, char *argv[])
 {
+    QQuickStyle::setStyle("Basic");  // 👈 задать стиль явно
     QGuiApplication app(argc, argv);
 
     QQmlApplicationEngine engine;
@@ -19,7 +21,9 @@ int main(int argc, char *argv[])
         &app,
         []() { QCoreApplication::exit(-1); },
         Qt::QueuedConnection);
-    engine.loadFromModule("test", "Main");
+        engine.load(QUrl(QStringLiteral("qrc:/Main.qml")));
+
+
 
 
     return app.exec();

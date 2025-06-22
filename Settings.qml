@@ -3,18 +3,18 @@ import QtQuick.Controls
 
 Item {
     width: 600
-    height: 400
+    height: 600
 property var navigateTo
     id: root
     Column {
         anchors.centerIn: parent
         spacing: 10
 
-Row {
-        spacing: 10
-        Button { text: "← Назад"; onClicked: root.navigateTo("PasswordList.qml") }
-        Button { text: "Главная"; onClicked: root.navigateTo("PasswordList.qml") }
-    }
+        Row {
+            spacing: 10
+            Button { text: "← Назад"; onClicked: root.navigateTo("PasswordList.qml") }
+            Button { text: "Главная"; onClicked: root.navigateTo("PasswordList.qml") }
+        }
 
         GroupBox {
             title: "Безопасность"

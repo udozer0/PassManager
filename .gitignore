@@ -1,0 +1,41 @@
+# === Общие ===
+*.log
+*.swp
+*.swo
+*.bak
+*~
+
+# === C++ и CMake ===
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+CTestTestfile.cmake
+cmake_install.cmake
+compile_commands.json
+
+# === Исполняемые файлы и объекты ===
+*.out
+*.o
+*.obj
+*.so
+*.a
+*.exe
+*.dll
+
+# === Docker ===
+# Игнорируем файлы, которые не нужно добавлять в образ
+docker-compose.override.yml
+.docker/
+.vscode/
+*.vscode/
+
+# === GDB и отладка ===
+*.core
+*.gdb
+*.dSYM/
+
+# === Test Outputs ===
+Testing/
+test-results/

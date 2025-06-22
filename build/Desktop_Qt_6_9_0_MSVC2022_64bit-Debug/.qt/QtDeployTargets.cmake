@@ -1,3 +1,0 @@
-set(__QT_DEPLOY_TARGET_apptest_FILE D:/codes/test/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/apptest.exe)
-set(__QT_DEPLOY_TARGET_apptest_TYPE EXECUTABLE)
-set(__QT_DEPLOY_TARGET_apptest_RUNTIME_DLLS C:/QtS/6.9.0/msvc2022_64/bin/Qt6Quickd.dll;C:/QtS/6.9.0/msvc2022_64/bin/Qt6WebSocketsd.dll;C:/QtS/6.9.0/msvc2022_64/bin/Qt6QmlMetad.dll;C:/QtS/6.9.0/msvc2022_64/bin/Qt6QmlWorkerScriptd.dll;C:/QtS/6.9.0/msvc2022_64/bin/Qt6QmlModelsd.dll;C:/QtS/6.9.0/msvc2022_64/bin/Qt6Qmld.dll;C:/QtS/6.9.0/msvc2022_64/bin/Qt6OpenGLd.dll;C:/QtS/6.9.0/msvc2022_64/bin/Qt6Guid.dll;C:/QtS/6.9.0/msvc2022_64/bin/Qt6Networkd.dll;C:/QtS/6.9.0/msvc2022_64/bin/Qt6Cored.dll)

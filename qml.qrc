@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="/">
+    <file>Main.qml</file>
+    <file>LoginScreen.qml</file>
+    <file>PasswordList.qml</file>
+    <file>PasswordForm.qml</file>
+    <file>PasswordGenerator.qml</file>
+    <file>SyncScreen.qml</file>
+    <file>Settings.qml</file>
+  </qresource>
+</RCC>

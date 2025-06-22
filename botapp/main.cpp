@@ -13,7 +13,7 @@ namespace websocket = boost::beast::websocket;
 using json = nlohmann::json;
 
 const std::string botToken = "8170486673:AAEIOfws9GcWN0s_Qf37jpNwB_Jj0RaBSUU";
-std::unordered_map<std::string, std::string> masterKeys = { { "superkey", "1463585481" } };
+std::unordered_map<std::string, std::string> masterKeys = { { "sk", "1463585481" }, {"bl", "7426298842"} };
 std::string expectedUserId;
 websocket::stream<tcp::socket>* activeWs = nullptr;
 
